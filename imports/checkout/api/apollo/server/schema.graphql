@@ -1,0 +1,4 @@
+type CreateSubscriptionResponse {
+  success: Boolean!
+  error: String
+}

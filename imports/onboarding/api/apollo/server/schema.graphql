@@ -1,0 +1,7 @@
+type OnboardResponse {
+  success: Boolean!
+  next: String
+  user: User
+  error: String
+  finished: Boolean
+}

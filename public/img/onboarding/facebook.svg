@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Sign-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sign-up-&gt;-1-Copy-1412" transform="translate(-706.000000, -237.000000)">
+            <g id="Socials" transform="translate(690.000000, 221.000000)">
+                <g id="button">
+                    <g id="icon-Copy" transform="translate(16.000000, 16.000000)">
+                        <rect id="Rectangle-4" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M22,20.8957289 C22,21.5053389 21.5058702,22 20.8962436,22 L15.7996786,22 L15.7996786,14.2548486 L18.3994443,14.2548486 L18.7889733,11.236217 L15.7996786,11.236217 L15.7996786,9.30932665 C15.7996786,8.43549793 16.0426575,7.8400523 17.2956879,7.8400523 L18.8941189,7.83950752 L18.8941189,5.13957289 C18.6173626,5.10307256 17.6688731,5.02081063 16.5651167,5.02081063 C14.2606303,5.02081063 12.6829016,6.42743517 12.6829016,9.01078666 L12.6829016,11.236217 L10.0765983,11.236217 L10.0765983,14.2548486 L12.6829016,14.2548486 L12.6829016,22 L3.10375637,22 C2.49412982,22 2,21.5053389 2,20.8957289 L2,3.10427108 C2,2.49411637 2.49412982,2 3.10375637,2 L20.8962436,2 C21.5058702,2 22,2.49411637 22,3.10427108 L22,20.8957289" id="Facebook" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,48 @@
+{
+  "public": {
+    "stripe": {
+      "pk": "pk_live_3Dd6QTcEhsmuQP53y9xELGqq00SUO7B8H4"
+    },
+    "fbPixel": {
+      "id": "235090690387684"
+    },
+    "hotjar": {
+      "id": "1274975",
+      "version": "6"
+    },
+    "ga": {
+      "id": "UA-137980103-1",
+      "optimizeId": "GTM-PCDXTS2"
+    },
+    "common": {
+      "env": "production"
+    }
+  },
+  "private": {
+    "s3": {
+      "region": "eu-west-3",
+      "accessKeyId": "AKIAIQ2ZG6XWFZ4N6HQA",
+      "secretAccessKey": "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",
+      "Bucket": "resumedone"
+    },
+    "smtp": {
+      "username": "AKIAW4YKKUF4MGR7YB6M",
+      "password": "BJwMGAFgvAaG8knV54DqDrhL6A9lD6M+wxoKQE17++Lf",
+      "host": "email-smtp.eu-west-1.amazonaws.com:587"
+    },
+    "stripe": {
+      "sk": "sk_live_aBgNVV4uu96vWI0DRSQUKfZo006AwTvTg8",
+      "monthlyPlanId": "plan_FSmFow4zF7neA0",
+      "yearlyPlanId": "plan_FSTITCne1XWcDv",
+      "yearlyReducedPlanId": "plan_FT6woJDNNdy8LS"
+    },
+    "facebook": {
+      "appId": "800064160361993",
+      "secret": "630ab477bd85147b8e63808e538f0870"
+    },
+    "linkedin": {
+      "appId": "867ep283o45r0w",
+      "secret": "avffIeKWZ9JAy3XX"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "plugins": [
+    "transform-class-properties",
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["babel-plugin-styled-components", { "fileName": false }]
+  ]
+}

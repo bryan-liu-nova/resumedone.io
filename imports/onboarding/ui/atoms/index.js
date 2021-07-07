@@ -1,0 +1,10 @@
+export { default as OnboardingButton } from './OnboardingButton';
+export { default as OnboardingTitle } from './OnboardingTitle';
+export { default as OnboardingSubTitle } from './OnboardingSubTitle';
+export { default as OnboardingContent } from './OnboardingContent';
+export { default as OnboardingSocialButton } from './OnboardingSocialButton';
+export { default as OnboardingSocialIcon } from './OnboardingSocialIcon';
+export { default as OnboardingInput } from './OnboardingInput';
+export { default as OnboardingLabel } from './OnboardingLabel';
+export { default as OnboardingFormGroup } from './OnboardingFormGroup';
+export { default as OnboardingSliderTemplate } from './OnboardingSliderTemplate';

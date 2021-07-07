@@ -1,0 +1,175 @@
+scalar Date
+
+scalar Value
+
+type PersonalData {
+  firstName: String
+  lastName: String
+  email: String
+  phone: String
+}
+
+type ServiceData {
+  onboard: String
+  template: String
+  subscriptionId: String
+}
+
+type User {
+  _id: ID
+  createdAt: Date
+  personalData: PersonalData
+  serviceData: ServiceData
+  email: String
+}
+
+enum LanguageLevel {
+  NATIVE
+  PROFICIENT
+  VERY_GOOD
+  GOOD
+  WORKING
+  C2
+  C1
+  B2
+  B1
+  A2
+  A1
+}
+
+enum SkillLevel {
+  NOVICE
+  BEGINNER
+  SKILLFUL
+  EXPERIENCED
+  EXPERT
+}
+
+enum BlockType {
+  CUSTOM
+  COURSES
+  EXTRA_CURRICULAR
+  INTERNSHIPS
+  HOBBIES
+  LANGUAGES
+  REFERENCES
+  EMPLOYMENT
+  SKILLS
+  EDUCATION
+  SOCIAL_LINKS
+}
+
+type BlockFields {
+  title: String
+  employer: String
+  city: String
+  startDate: Date
+  endDate: Date
+  current: Boolean
+  description: String
+  label: String
+  url: String
+  skill: String
+  skillLevel: SkillLevel
+  school: String
+  degree: String
+  hobbies: String
+  language: String
+  languageLevel: LanguageLevel
+  course: String
+  institution: String
+  fullName: String
+  company: String
+  phone: String
+  email: String
+}
+
+type BlockItem {
+  _id: ID!
+  order: Int
+  fields: BlockFields
+  animationKey: String!
+}
+
+type Block {
+  _id: ID!
+  type: BlockType!
+  title: String
+  order: Int
+  fixedOrder: Int
+  items: [BlockItem]
+  hideLevel: Boolean
+  hideReferences: Boolean
+  required: Boolean
+  animationKey: String!
+}
+
+type SocialLink {
+  label: String
+  url: String
+  animationKey: String!
+}
+
+type ResumeSettings {
+  template: String
+  color: String
+  status: String
+}
+
+type ResumeDetails {
+  title: String
+  firstName: String
+  lastName: String
+  email: String
+  phone: String
+  userPic: String
+  country: String
+  city: String
+  address: String
+  postalCode: String
+  driversLicence: String
+  nationality: String
+  placeOfBirth: String
+  dateOfBirth: String
+  professionalSummary: String
+  socialLinks: [SocialLink]
+}
+
+type Resume {
+  _id: ID!
+  createdAt: Date!
+  updatedAt: Date!
+  updatesCount: Int # Incremented every time something changes. Used for the ease of resume updates
+  restructureCount: Int # Gets incremented every time the structure changes (block gets added etc). Again, used for UI performance improvement
+  author: String
+  name: String!
+  steps: [String],
+  currentStep: String,
+  details: ResumeDetails
+  settings: ResumeSettings
+  blocks: [Block]
+}
+
+type File {
+  filename: String!
+  mimetype: String!
+  encoding: String!
+}
+
+type Job {
+  _id: ID!
+  title: String!
+}
+
+type Suggestion {
+  _id: ID!
+  text: String!
+  type: String!
+  job: String!
+}
+
+type School {
+  _id: ID!
+  name: String!
+  city: String!
+}

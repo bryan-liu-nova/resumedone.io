@@ -1,0 +1,102 @@
+import React, { PureComponent } from 'react';
+import styled from 'styled-components';
+
+import { Box, Flex } from '/imports/core/ui/atoms';
+import {
+  CheckoutOneContainer as Container,
+  CheckoutTextOne
+} from '/imports/checkout/ui/atoms';
+
+class Testimonial extends PureComponent {
+  testimonials = [
+    {
+      src: '/img/checkout/avatar-1.png',
+      text:
+        '"Your site/program made it very easy to upgrade my resume to the standards that employers are looking for these days... My thanks to you all for giving 50+ adults a better chance at rebuilding our lives again."',
+      author: 'Eddie Lobanovskiy'
+    },
+    {
+      src: '/img/checkout/avatar-2.png',
+      text:
+        '"I love the templates! …Having coordinating letterhead for cover letters was great, too. Lots of compliments from the career advisors at my law school!"',
+      author: 'Sansheng'
+    }
+  ];
+
+  render() {
+    return (
+      <ContainerTestimonial>
+        <TestimonialHeader>What people are saying</TestimonialHeader>
+        <Flex wrap="wrap">
+          {this.testimonials.map(({ src, text, author }) => (
+            <Box md={12} key={author}>
+              <Avatar src={src} />
+              <TestimonialText>{text}</TestimonialText>
+              <TestimonialAuthor>{author}</TestimonialAuthor>
+            </Box>
+          ))}
+        </Flex>
+      </ContainerTestimonial>
+    );
+  }
+}
+
+const ContainerTestimonial = styled(Container)`
+  border: solid 1px #dde4e8;
+  background: #ffffff;
+  padding: 65px 200px;
+  ${({ theme }) => theme.max('md')`
+    border: none;
+    padding: 30px 20px;
+  `}
+`;
+
+const TestimonialHeader = styled(p => (
+  <CheckoutTextOne align="center" {...p} />
+))`
+  font-size: 36px;
+  margin: 0 0 36px;
+  ${({ theme }) => theme.max('md')`
+    font-size: 31px;
+    margin-bottom: 20px;
+  `}
+`;
+
+const Avatar = styled.img`
+  float: left;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-right: 25px;
+  ${({ theme }) => theme.max('md')`
+    width: 94px;
+    height: 94px;
+    margin: auto;
+    display: block;
+    float: none;
+  `}
+`;
+
+const TestimonialText = styled(p => <CheckoutTextOne align="left" {...p} />)`
+  font-size: 18px;
+  line-height: 1.44;
+  color: #3d4047;
+  margin: 0 0 0 105px;
+  ${({ theme }) => theme.max('md')`
+    font-size: 16px;
+    line-height: 1.38;
+    margin: 10px 0 15px;
+  `}
+`;
+const TestimonialAuthor = styled(p => <CheckoutTextOne align="left" {...p} />)`
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #429ff0;
+  margin: 15px 0 40px 105px;
+  text-transform: uppercase;
+  ${({ theme }) => theme.max('md')`
+    margin: 0 0 40px;
+  `}
+`;
+
+export default Testimonial;

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="162px" height="162px" viewBox="0 0 162 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>social-background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="32" cy="32" r="32"></circle>
+    </defs>
+    <g id="Sign-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sign-up-&gt;-1-Copy-1412" transform="translate(-489.000000, -239.000000)">
+            <g id="picture" transform="translate(490.000000, 226.000000)">
+                <g id="social-background" transform="translate(0.000000, 14.000000)">
+                    <circle id="Oval-3-Copy" stroke="#BFC7D9" stroke-width="2" opacity="0.3" cx="80" cy="80" r="48"></circle>
+                    <circle id="Oval-3-Copy-2" stroke="#BFC7D9" stroke-width="2" opacity="0.6" cx="80" cy="80" r="64"></circle>
+                    <circle id="Oval-3-Copy-3" stroke="#BFC7D9" stroke-width="2" cx="80" cy="80" r="80"></circle>
+                    <g id="Group-3" transform="translate(48.000000, 48.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Oval-3" fill="#1976D2" xlink:href="#path-1"></use>
+                        <g id="Group" mask="url(#mask-2)" fill-opacity="0.84765625" fill="#FFFFFF">
+                            <g transform="translate(13.000000, 18.000000)">
+                                <path d="M19.2268829,21.5625 C26.161848,21.5625 28.8584619,14.8760622 28.8584619,9.58333333 C28.8584619,4.29060448 24.5462571,0 19.2268829,0 C13.9075088,0 9.59530398,4.29060448 9.59530398,9.58333333 C9.59530398,14.8760622 12.2919178,21.5625 19.2268829,21.5625 Z" id="Oval"></path>
+                                <path d="M38.4372131,48.729903 C38.4372131,48.729903 38.3367822,45.9713311 38.3367822,44.5697313 C38.3367822,34.068492 31.4579393,25.5555556 19.2268829,25.5555556 C6.99582651,25.5555556 0.116983633,34.068492 0.116983633,44.5697313 C0.116983633,46.153718 9.9475983e-13,49.2608628 9.9475983e-13,49.2608628 L38.4372131,48.729903 Z" id="Oval-2"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Icons"></g>
+            </g>
+        </g>
+    </g>
+</svg>

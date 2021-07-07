@@ -1,0 +1,16 @@
+enum ReorderDirection {
+  UP
+  DOWN
+}
+
+type AddBlockItemResponse {
+  resumeId: ID!
+  blockId: ID!
+  itemId: ID!
+  items: [BlockItem]
+}
+
+type GetDownloadLinkResponse {
+  downloadKey: ID!
+  resumeId: ID!
+}
